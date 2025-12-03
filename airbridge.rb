@@ -5,21 +5,21 @@
 class Airbridge < Formula
   desc "AirBridge is a secure file transfer tool that uses RSA encryption."
   homepage "https://github.com/batuhan0sanli/airbridge"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.2/airbridge_Darwin_x86_64.tar.gz"
-      sha256 "303bc91f5ff6f8367393499219a01b723feef1e4a5278ef08c9787445b05331e"
+      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.3/airbridge_Darwin_x86_64.tar.gz"
+      sha256 "65069033e04c4d5c587d4dddd70c6d3787014d5070b4ecbae075292ef0cebfba"
 
       def install
         bin.install "airbridge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.2/airbridge_Darwin_arm64.tar.gz"
-      sha256 "ecd4052111d6b6b27011b85bd48f30a4111c6a0f88ec43098f5f6838e28bddb5"
+      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.3/airbridge_Darwin_arm64.tar.gz"
+      sha256 "1c884879f91c5b2d929bc602989a43a36e60e27ab1e982f2b163fd4c4f047bfb"
 
       def install
         bin.install "airbridge"
@@ -29,15 +29,15 @@ class Airbridge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.2/airbridge_Linux_x86_64.tar.gz"
-      sha256 "31be3b45b54ce594627e44887f0e87cd42f012c98e5938f45ad8b3d06acaf2bd"
+      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.3/airbridge_Linux_x86_64.tar.gz"
+      sha256 "c835f08a2012c218de9ab7f78848d7cce3e3f542ae3df869e6ea4629534e520a"
       def install
         bin.install "airbridge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.2/airbridge_Linux_arm64.tar.gz"
-      sha256 "82095165c3d61df91fcc89e6fbd56c43f4f30f7d7fc0d881a6a38dd95423760d"
+      url "https://github.com/batuhan0sanli/AirBridge/releases/download/v0.1.3/airbridge_Linux_arm64.tar.gz"
+      sha256 "45f3c28263d08d4e3876f29a13d17bd64cd00a9729452609eb4a33f5f55f6a34"
       def install
         bin.install "airbridge"
       end

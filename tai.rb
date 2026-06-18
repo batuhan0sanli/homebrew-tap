@@ -5,21 +5,21 @@
 class Tai < Formula
   desc "Terminal AI — turn natural-language requests into shell commands using Claude."
   homepage "https://github.com/batuhan0sanli/tai"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/batuhan0sanli/tai/releases/download/v0.1.0/tai_Darwin_x86_64.tar.gz"
-      sha256 "37cf712c465730a86ac247c1bb60e7876de79c8ad246d737f282e22ac37c5549"
+      url "https://github.com/batuhan0sanli/tai/releases/download/v0.2.0/tai_Darwin_x86_64.tar.gz"
+      sha256 "5b4336e04ccf31da755fcde308619b0dd528418e69e835817796e6193b530847"
 
       define_method(:install) do
         bin.install "tai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/batuhan0sanli/tai/releases/download/v0.1.0/tai_Darwin_arm64.tar.gz"
-      sha256 "81e121e61c904ecb3c4d29529781b4dc65f4409eb7f620f4f8d0d49660110bee"
+      url "https://github.com/batuhan0sanli/tai/releases/download/v0.2.0/tai_Darwin_arm64.tar.gz"
+      sha256 "5efb556151240265eb44d88e22b279ea3fcc3d467f007ef5ffb16dedd6d52090"
 
       define_method(:install) do
         bin.install "tai"
@@ -29,15 +29,15 @@ class Tai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/batuhan0sanli/tai/releases/download/v0.1.0/tai_Linux_x86_64.tar.gz"
-      sha256 "17bb23485889862cf2a90f00e22f7db02c75de18d0ac3b26efc86a7e247b6e0d"
+      url "https://github.com/batuhan0sanli/tai/releases/download/v0.2.0/tai_Linux_x86_64.tar.gz"
+      sha256 "376cc2b11000ec5a071b82dce1fe51e3a85edae199db4e185a70d49c87044c6c"
       define_method(:install) do
         bin.install "tai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/batuhan0sanli/tai/releases/download/v0.1.0/tai_Linux_arm64.tar.gz"
-      sha256 "6508604546460b8fdf7cfca87a6f3d8bfe77c7dd9e92e76a3b4462a34f596b4c"
+      url "https://github.com/batuhan0sanli/tai/releases/download/v0.2.0/tai_Linux_arm64.tar.gz"
+      sha256 "4922b96f4122b4806fc28bc53a9f6e31a6d34fca0890b9f0c34217fe580363b4"
       define_method(:install) do
         bin.install "tai"
       end
